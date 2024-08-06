@@ -4,8 +4,8 @@ body {
   line-height: 1.17;
   /*  1.16667 */
   letter-spacing: -0.02em;
-  color: #fbfbfb;
-  background-color: #0e1823;
+  color: var(--primary-white);
+  background-color: var(--primary-background);
 }
 
 main {
