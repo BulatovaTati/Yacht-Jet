@@ -1,22 +1,35 @@
 :root {
-  --primary-background: #0e1823;
-
+  /* #region Color styles */
   --primary-white: #fbfbfb;
   --primary-green: #1b414b;
   --primary-black: #040306;
-
   --text-color: rgba(4, 3, 6, 0.4);
   --color-gray: rgba(251, 251, 251, 0.4);
   --color-white-gray: rgba(251, 251, 251, 0.8);
-  --line-color: rgba(4, 3, 6, 0.1);
-  --border-color: rgba(251, 251, 251, 0.35);
+  --color-text-hero: rgba(251, 251, 251, 0.7);
+  /* #endregion */
+
+  /* #region Menu styles */
   --stroke-burger: #2f2f37;
   --header-menu-link: rgba(27, 65, 75, 0.5);
   --header-menu-link-hover: #062730;
+  /* #endregion */
+
+  /* #region Background-Color styles */
+  --primary-background: #0e1823;
   --backdrop-hover-social-link: rgba(251, 251, 251, 0.8);
   --color-lines: #fbfbfb1a;
+  /* #endregion */
 
+  /* #region Border styles */
+  --line-color: rgba(4, 3, 6, 0.1);
+  --border-color: rgba(251, 251, 251, 0.35);
   --input-border: rgba(251, 251, 251, 0.2);
   --input-border-focus: rgba(251, 251, 251, 0.5);
-  --color-text-hero: rgba(251, 251, 251, 0.7);
+  /* #endregion */
+
+  /* #region Transition styles */
+  --time: 300ms;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  /* #endregion */
 }
