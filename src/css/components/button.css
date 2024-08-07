@@ -15,11 +15,28 @@
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  transition: color var(--time) var(--cubic),
+    background-color var(--time) var(--cubic);
+}
+
+.btn:hover,
+.btn:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
 }
 
 .yacht-btn {
   min-width: 141px;
   border: 1px solid rgba(251, 251, 251, 0.35);
+  transition: color var(--time) var(--cubic),
+    background-color var(--time) var(--cubic);
+}
+
+.yacht-btn:hover,
+.yacht-btn:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+  border-color: transparent;
 }
 
 .rent-btn {
