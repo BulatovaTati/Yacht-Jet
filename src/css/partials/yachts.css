@@ -1,0 +1,137 @@
+/* ===========MOBILE STYLES============ */
+
+.our-yachts {
+    padding-bottom: 80px;
+}
+
+.title-our-yachts {
+    max-width: 319px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    margin: 0 auto 40px;
+}
+
+.second-yacht-card,
+.third-yacht-card {
+    display: none;
+}
+
+.item-yachts-image {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-radius: 24px;
+}
+
+.list-yachts {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 0 auto 40px;
+}
+
+.item-yachts {
+    width: 100%;
+    background-color: #fbfbfb;
+    border-radius: 24px;
+    padding: 16px 16px 32px;
+}
+
+.table-wrapper {
+    padding: 0 16px;
+}
+
+.table-yachts-desc {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-yachts-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(4, 3, 6, 0.10);
+}
+
+.table-yachts-first-row {
+    padding-top: 16px;
+}
+
+.table-yachts-first-column-name {
+    color: #1b414b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.63px;
+    text-transform: uppercase;
+   
+}
+
+.table-yachts-second-column-lable {
+    color: #040306;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    opacity: 0.4;
+    white-space: nowrap;
+
+}
+
+.table-yachts-first-column {
+    color: #040306;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: 0.4;
+    
+}
+
+.table-yachts-second-column {
+    width: 94px;
+    font-weight: 400;
+    color: #040306;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.42px;
+    white-space: nowrap;
+    padding-bottom: 6px;
+    
+}
+
+.table-row-yachts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-yacht-rental {
+    width: 138px;
+    height: 46px;
+    padding: 14px 32px;
+    border-radius: 15px;
+    border: 1px solid rgba(251, 251, 251, 0.35);
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    transition: background-color 0.5s ease ;
+    }
+
+
+.link-yacht-rental:focus,
+.link-yacht-rental:hover {
+    background-color: #fbfbfb;
+    color: #1b414b;
+    border-color: transparent;
+}
+
