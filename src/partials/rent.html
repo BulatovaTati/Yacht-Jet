@@ -1,51 +1,46 @@
 <section class="rent">
   <div class="container">
     <h2 class="rent-title">Rent a yacht now</h2>
-    <form>
-      <div class="rent-label-wrap">
-        <label class="rent-label">
-          <input
-            name="user-name"
-            type="text"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            class="rent-input"
-            placeholder="Full Name"
-          />
-        </label>
-      </div>
-      <div class="rent-label-wrap">
-        <label class="rent-label">
-          <input
-            name="user-email"
-            type="email"
-            class="rent-input"
-            placeholder="Email"
-          />
-        </label>
-      </div>
-      <div class="rent-label-wrap">
-        <label>
-          <input
-            name="user-tel"
-            type="tel"
-            pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
-            class="rent-input"
-            placeholder="Phone number"
-          />
-        </label>
-      </div>
-      <div class="rent-textarea-wrap">
-        <label for="user-comment"></label>
-        <textarea
-          id="user-comment"
-          name="user-comment"
-          placeholder="Comment"
-          class="rent-input rent-textarea-input"
-        ></textarea>
-      </div>
-      <button type="button" class="btn {=$class-modifier}">Send</button>
+    <form class="rent-form">
+      <label class="rent-label">
+        <input
+          name="user-name"
+          type="text"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          class="rent-input"
+          placeholder="Full Name"
+          minlength="3"
+          required
+        />
+      </label>
+      <label class="rent-label">
+        <input
+          name="user-email"
+          type="email"
+          class="rent-input"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <label class="rent-label">
+        <input
+          name="user-tel"
+          type="tel"
+          pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+          class="rent-input"
+          placeholder="Phone number"
+          minlength="10"
+          required
+        />
+      </label>
+      <textarea
+        name="user-comment"
+        placeholder="Comment"
+        class="rent-input rent-textarea-input"
+      ></textarea>
+      <button type="submit" class="btn {=$class-modifier}">Send</button>
     </form>
-    <div class="rent-img-wrap">
+    <div>
       <picture>
         <source
           media="(min-width: 1440px)"
