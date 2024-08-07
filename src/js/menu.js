@@ -1,15 +1,42 @@
 // (() => {
-//   const menuBtnRef = document.querySelector('[data-menu-button]');
-//   const mobileMenuRef = document.querySelector('[data-menu]');
+//   const mobileMenu = document.querySelector('.js-menu-container');
+//   const openMenuBtn = document.querySelector('.js-open-menu');
+//   const closeMenuBtn = document.querySelector('.js-close-menu');
 
-//   menuBtnRef.addEventListener('click', () => {
-//     const expanded =
-//       menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+//   const toggleMenu = () => {
+//     const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
+//     const isMenuOpen =
+//       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+//     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+//     mobileMenu.classList.toggle('is-open');
 
-//     menuBtnRef.classList.toggle('is-open');
-//     menuBtnRef.setAttribute('aria-expanded', !expanded);
+//     const scrollLockMethod = !isMenuOpen
+//       ? 'disableBodyScroll'
+//       : 'enableBodyScroll';
+//     bodyScrollLock[scrollLockMethod](document.body);
 
-//     mobileMenuRef.classList.toggle('is-open');
-//     document.body.classList.toggle('is-menu-shown');
+//     if(anchors.length === 0) return;
+
+//     if(!isMenuOpen) {
+//       anchors.forEach(anchor => {
+//         anchor.addEventListener("click", toggleMenu)
+//       })
+//       return;
+//     }
+
+//     anchors.forEach(anchor => {
+//         anchor.removeEventListener("click", toggleMenu)
+//       })
+//   };
+
+//   openMenuBtn.addEventListener('click', toggleMenu);
+//   closeMenuBtn.addEventListener('click', toggleMenu);
+
+//   // Вказати брейкпоінт після якого повинна зачинятися
+//   window.matchMedia('(min-width: 375px)').addEventListener('change', e => {
+//     if (!e.matches) return;
+//     mobileMenu.classList.remove('is-open');
+//     openMenuBtn.setAttribute('aria-expanded', false);
+//     bodyScrollLock.enableBodyScroll(document.body);
 //   });
 // })();

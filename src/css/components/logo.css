@@ -1,0 +1,16 @@
+.logo {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
+.footer-logo {
+  color: #fbfbfb;
+}

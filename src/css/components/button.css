@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+
+  min-width: 122px;
+  height: 46px;
+  padding: 14px 32px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  /* 1.28571 */
+  color: #fbfbfb;
+  background-color: #1b414b;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.yacht-btn {
+  min-width: 141px;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+}
+
+.rent-btn {
+  padding: 14px 44px;
+}
