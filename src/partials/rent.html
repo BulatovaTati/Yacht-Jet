@@ -1,3 +1,81 @@
 <section class="rent">
-  <div class="container">rent-yacht</div>
+  <div class="container">
+    <h2 class="rent-title">Rent a yacht now</h2>
+    <form>
+      <div class="rent-label-wrap">
+        <label class="rent-label">
+          <input
+            name="user-name"
+            type="text"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            class="rent-input"
+            placeholder="Full Name"
+          />
+        </label>
+      </div>
+      <div class="rent-label-wrap">
+        <label class="rent-label">
+          <input
+            name="user-email"
+            type="email"
+            class="rent-input"
+            placeholder="Email"
+          />
+        </label>
+      </div>
+      <div class="rent-label-wrap">
+        <label>
+          <input
+            name="user-tel"
+            type="tel"
+            pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+            class="rent-input"
+            placeholder="Phone number"
+          />
+        </label>
+      </div>
+      <div class="rent-textarea-wrap">
+        <label for="user-comment"></label>
+        <textarea
+          id="user-comment"
+          name="user-comment"
+          placeholder="Comment"
+          class="rent-input rent-textarea-input"
+        ></textarea>
+      </div>
+      <button type="button" class="btn {=$class-modifier}">Send</button>
+    </form>
+    <div class="rent-img-wrap">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/img/rent/rent-desk2.jpg 1x, /img/rent/rent-desk2-2x.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="/img/rent/rent-desk1.jpg 1x, /img/rent/rent-desk1-2x.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/img/rent/rent-tab.jpg 1x, /img/rent/rent-tab-2x.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/img/rent/rent-mob.jpg 1x, /img/rent/rent-mob-2x.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          src="/img/rent/rent-desk2.jpg"
+          alt="yacht for rent"
+          class="rent-img"
+          width="768"
+          height="536"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
