@@ -114,6 +114,7 @@
 
 @media screen and (min-width: 1440px) {
   .reviews-item {
+    flex-basis: calc((100% - 64px) / 3);
     padding: 32px 36px;
   }
 }
