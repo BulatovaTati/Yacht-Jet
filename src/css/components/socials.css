@@ -1,0 +1,15 @@
+.social-media {
+  display: flex;
+  gap: 8px;
+}
+
+.social-media-icon {
+  fill: #1b414b;
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu .social-media-icon,
+footer .social-media-icon {
+  fill: #fbfbfb;
+}
