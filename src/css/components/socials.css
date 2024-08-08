@@ -5,11 +5,22 @@
 
 .social-media-icon {
   fill: #1b414b;
-  width: 24px;
-  height: 24px;
+  transition: fill var(--time) var(--cubic);
+}
+
+.social-media-icon:hover,
+.social-media-icon:focus {
+  fill: #062730;
 }
 
 .mobile-menu .social-media-icon,
-footer .social-media-icon {
+.footer-container .social-media-icon {
   fill: #fbfbfb;
+}
+
+.mobile-menu .social-media-icon:hover,
+.footer-container .social-media-icon:hover,
+.mobile-menu .social-media-icon:focus,
+.footer-container .social-media-icon:focus {
+  fill: rgba(251, 251, 251, 0.8);
 }
