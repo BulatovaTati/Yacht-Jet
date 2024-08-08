@@ -1,6 +1,6 @@
 .about {
   margin-top: -59px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .about-container {
@@ -31,8 +31,7 @@
 }
 
 .about-text-descr {
-  color: #040306;
-  opacity: 0.4;
+  color: rgba(4, 3, 6, 0.4);
 }
 
 .about-photo {
@@ -42,7 +41,7 @@
 /* @media screen and (min-width: 768px) {
   .about {
     margin-top: -67px;
-    margin-bottom: 150px;
+   padding-bottom: 150px;
   }
 
   .about-block {
@@ -74,7 +73,7 @@
 @media screen and (min-width: 1280px) {
   .about {
     margin-top: -35px;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 
   .about-block {
