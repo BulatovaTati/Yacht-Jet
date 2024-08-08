@@ -26,7 +26,7 @@
   height: 42px;
   background-color: transparent;
   outline: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color var(--time) var(--cubic),
   border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 20px;
 }
@@ -43,3 +43,43 @@
   border-color:  rgba(251, 251, 251, 0.5);
 }
 
+@media only screen and (min-width: 768px) {
+  .rent-wrapper 
+  {
+      width: 473px;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.rent-input {
+  height: 54px;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.rent-textarea-input {
+  min-height: 116px;
+  padding: 18px;
+  margin-bottom: 50px;
+}
+
+.rent {
+  padding-bottom: 150px;
+}
+
+.rent-title {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+.rent-form {
+  margin-bottom: 100px;
+}
+
+.rent-img {
+  max-width: 704px;
+  height: 534px;
+  margin: 0 auto;
+}
+}
