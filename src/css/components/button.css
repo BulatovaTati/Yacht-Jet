@@ -11,12 +11,12 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  /* 1.28571 */
-  color: #fbfbfb;
+  color: inherit;
   background-color: #1b414b;
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  text-wrap: nowrap;
   transition: color var(--time) var(--cubic),
     background-color var(--time) var(--cubic);
 }
@@ -27,9 +27,17 @@
   background-color: #fbfbfb;
 }
 
+@media screen and (min-width: 768px) {
+  .btn-link {
+    padding: 16px 40px;
+    min-width: 179px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
 .yacht-btn-link {
-  width: 141px;
-  text-wrap: nowrap;
   border: 1px solid rgba(251, 251, 251, 0.35);
   background-color: transparent;
   transition: color var(--time) var(--cubic),
@@ -46,4 +54,13 @@
 .btn-submit {
   margin: 0;
   padding: 14px 44px;
+  min-width: 122px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-submit {
+    padding: 18px 75px;
+    min-width: 194px;
+    height: 56px;
+  }
 }
