@@ -1,6 +1,6 @@
-.btn {
+.btn-link {
   display: block;
-
+  margin: 0 auto;
   min-width: 122px;
   height: 46px;
   padding: 14px 32px;
@@ -19,26 +19,29 @@
     background-color var(--time) var(--cubic);
 }
 
-.btn:hover,
-.btn:focus {
+.btn-link:hover,
+.btn-link:focus {
   color: #1b414b;
   background-color: #fbfbfb;
 }
 
-.yacht-btn {
-  min-width: 141px;
+.yacht-btn-link {
+  width: 141px;
+  text-wrap: nowrap;
   border: 1px solid rgba(251, 251, 251, 0.35);
+  background-color: transparent;
   transition: color var(--time) var(--cubic),
     background-color var(--time) var(--cubic);
 }
 
-.yacht-btn:hover,
-.yacht-btn:focus {
+.yacht-btn-link:hover,
+.yacht-btn-link:focus {
   color: #1b414b;
   background-color: #fbfbfb;
   border-color: transparent;
 }
 
-.rent-btn {
+.btn-submit {
+  margin: 0;
   padding: 14px 44px;
 }
