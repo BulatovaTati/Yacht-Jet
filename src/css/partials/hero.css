@@ -33,3 +33,38 @@
   max-width: 335px;
   margin-bottom: 38px;
 }
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding: 280px 32px 282px;
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.39),
+        rgba(17, 19, 31, 0)
+      ),
+      url(/img/hero/hero-background-tablet.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 19, 31, 0.39),
+          rgba(17, 19, 31, 0)
+        ),
+        url(/img/hero/hero-background-tablet-2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 70px;
+    line-height: 1;
+    max-width: 704px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0 auto 48px;
+    max-width: 597px;
+  }
+}
