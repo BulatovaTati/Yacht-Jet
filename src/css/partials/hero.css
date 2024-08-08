@@ -1,7 +1,7 @@
 .hero-container {
   padding: 260px 20px 302px;
   background-image: linear-gradient(rgba(17, 19, 31, 0.39), rgba(17, 19, 31, 0)),
-    url(../img/hero/hero-background-mob.jpg);
+    url(/img/hero/hero-background-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +14,7 @@
   .hero {
     background-image: linear-gradient
         (rgba(17, 19, 31, 0.39), rgba(17, 19, 31, 0)),
-      url(../img/hero/hero-background-mob-2x.jpg);
+      url(/img/hero/hero-background-mob-2x.jpg);
   }
 }
 
@@ -23,7 +23,7 @@
   text-align: center;
   color: #fbfbfb;
   max-width: 335px;
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
 }
 
 .hero-text {
@@ -31,7 +31,7 @@
   text-align: center;
   color: rgba(251, 251, 251, 0.7);
   max-width: 335px;
-  margin-bottom: 38px;
+  margin: 0 auto 38px;
 }
 
 @media screen and (min-width: 768px) {
@@ -57,6 +57,7 @@
 
   .hero-title {
     font-size: 70px;
+    letter-spacing: -0.02em;
     line-height: 1;
     max-width: 704px;
   }
@@ -66,5 +67,54 @@
     line-height: 1.4;
     margin: 0 auto 48px;
     max-width: 597px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    padding: 235px 140px 215px;
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.39),
+        rgba(17, 19, 31, 0)
+      ),
+      url(/img/hero/hero-background-1280.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 19, 31, 0.39),
+          rgba(17, 19, 31, 0)
+        ),
+        url(/img/hero/hero-background-1280-2x.jpg);
+    }
+  }
+  .hero-title {
+    font-size: 80px;
+    max-width: 1001px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.39),
+        rgba(17, 19, 31, 0)
+      ),
+      url(/img/hero/hero-background-1440.jpg);
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 19, 31, 0.39),
+          rgba(17, 19, 31, 0)
+        ),
+        url(/img/hero/hero-background-1440-2x.jpg);
+    }
   }
 }
