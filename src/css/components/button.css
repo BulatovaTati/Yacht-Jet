@@ -1,7 +1,9 @@
 .btn-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+
   margin: 0 auto;
-  min-width: 122px;
+  width: 141px;
   height: 46px;
   padding: 14px 32px;
 
