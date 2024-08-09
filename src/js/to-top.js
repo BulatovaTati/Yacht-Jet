@@ -1,18 +1,19 @@
-// const toTopButton = document.querySelector('.scroll-to-top');
+const buttonToTop = document.querySelector('.scroll-to-top');
 
-// window.onscroll = () => changeScrollButtonVisibility();
+buttonToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
-// toTopButton.addEventListener('click', () =>
-//   document.getElementById('header').scrollIntoView()
-// );
+window.onscroll = () => changeScrollButtonVisibility();
 
-// function changeScrollButtonVisibility() {
-//   const offsetTrigger = 80;
-//   const pageOffset = window.pageYOffset;
+function changeScrollButtonVisibility() {
+  const button = document.querySelector('.scroll-to-top');
+  const offsetTrigger = 60;
+  const pageOffset = window.pageYOffset;
 
-//   if (pageOffset > offsetTrigger) {
-//     toTopButton.classList.remove('js-transparent');
-//   } else {
-//     toTopButton.classList.add('js-transparent');
-//   }
-// }
+  if (pageOffset > offsetTrigger) {
+    button.classList.remove('js-transparent');
+  } else {
+    button.classList.add('js-transparent');
+  }
+}
