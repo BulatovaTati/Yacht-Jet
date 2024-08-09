@@ -4,7 +4,7 @@
 }
 
 .about-container {
-  background-color: #fbfbfb;
+  background-color: var(--primary-white);
   border-radius: 24px;
 }
 
@@ -16,7 +16,7 @@
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
-  color: #1b414b;
+  color: var(--primary-green);
   margin-bottom: 40px;
 }
 
@@ -24,12 +24,12 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
-  color: #1b414b;
+  color: var(--primary-green);
   margin-bottom: 20px;
 }
 
 .about-text-descr {
-  color: rgba(4, 3, 6, 0.4);
+  color: var(--text-color);
 }
 
 .about-photo {
