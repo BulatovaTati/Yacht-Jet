@@ -32,7 +32,7 @@
 
 .item-yachts {
     width: 100%;
-    background-color: #fbfbfb;
+    background-color: var(--primary-white);
     border-radius: 24px;
     padding: 16px 16px 32px;
 }
@@ -48,7 +48,7 @@
 
 .table-yachts-title {
     padding-bottom: 16px;
-    border-bottom: 1px solid rgba(4, 3, 6, 0.10);
+    border-bottom: 1px solid var(--line-color);
 }
 
 .table-yachts-first-row {
@@ -56,7 +56,7 @@
 }
 
 .table-yachts-first-column-name {
-    color: #1b414b;
+    color: var(--primary-green);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.18;
@@ -66,7 +66,7 @@
 }
 
 .table-yachts-second-column-lable {
-    color: rgba(4, 3, 6, 0.4);
+    color: var(--text-color);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -76,7 +76,7 @@
 }
 
 .table-yachts-first-column {
-    color: rgba(4, 3, 6, 0.4);
+    color: var(--text-color);
     font-size: 14px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -89,7 +89,7 @@
 .table-yachts-second-column {
     width: 94px;
     font-weight: 400;
-    color: #040306;
+    color: var(--primary-black);
     font-size: 14px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -132,7 +132,7 @@
     font-size: 16px;
     line-height: 1.2;
     text-transform: uppercase;
-    color: #1b414b;
+    color: --primary-green;
     padding-right: 10px;
 }
 
@@ -147,7 +147,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: rgba(4, 3, 6, 0.4);
+    color: var(--text-color);
 }
 
 }
