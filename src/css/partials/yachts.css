@@ -113,7 +113,7 @@
  }
  
 .title-our-yachts {
-    margin: 0 auto 72px;
+    margin: 0 auto 75px;
     font-size: 48px; 
  }
 .list-yachts{
@@ -151,4 +151,48 @@
 }
 
 }
+/*================== DESKTOP 1280==============*/
+
+@media screen and (min-width: 1280px) {
+.title-our-yachts{
+    max-width: 714px;
+    }
+.list-yachts {
+    gap: 25px;
+  }
+
+.third-yacht-card {
+    display: block;
+ }
+
+.item-yachts {
+    width: calc((100% - 50px) / 3);
+}
+
+.table-yachts-first-column-name{
+    padding-right: 33px;
+}
+
+}
+/*================== DESKTOP 1440==============*/
+
+@media screen and (min-width: 1440px) {
+
+    .list-yachts {
+        max-width: 1240px;
+        gap: 32px;
+    }
+
+    .item-yachts {
+        width: calc((100% - 64px) / 3);
+    }
+
+    .table-yachts-first-column-name {
+        padding-right: 48px;
+    }
+}
+
+
+
+
 
