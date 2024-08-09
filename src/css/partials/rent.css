@@ -18,8 +18,8 @@
 }
 
 .rent-input {
-  color: rgba(251, 251, 251, 0.4);
-  border: 1px solid rgba(251, 251, 251, 0.2);
+  color: var(--color-gray);
+  border: 1px solid var(--input-border);
   border-radius: 12px;
   padding-left: 18px;
   width: 100%;
@@ -27,7 +27,7 @@
   background-color: transparent;
   outline: none;
   transition: color var(--time) var(--cubic),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color var(--time) var(--cubic);
   margin-bottom: 20px;
 }
 
@@ -39,8 +39,8 @@
 }
 
 .rent-input:focus-within {
-  color: #fbfbfb;
-  border-color: rgba(251, 251, 251, 0.5);
+  color: var(--primary-white);
+  border-color: var(--input-border-focus);
 }
 
 @media only screen and (min-width: 768px) {
