@@ -1,91 +1,66 @@
-<header>
-  <div class="container header-wrap">
-    <div class="header-container">
-      <load src="./components/logo.html" />
-      <nav class="menu-nav-tabl">
-        <ul class="menu-list">
-          <li class="menu-list-item">
-            <a href="#about" aria-label="About section" class="menu-list-link">About</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="#yachts" aria-label="Yachts section" class="menu-list-link">Yachts</a>
-          </li>
-          <li class="menu-list-item">
-            <a href="#reviews" aria-label="Review section" class="menu-list-link">Reviews</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="menu-social">
-        <load src="./components/socials.html" />
-      </div>
-      <button type="button" class="open-menu-but" js-open-menu>
-        <svg class="burger-icon" width="28" height="28">
-          <use href="/img/icons.svg#icon-burger"></use>
-        </svg>
-      </button>
-      <!-- Menu -->
-      <div class="menu-wrap" js-menu-container>
-        <div class="menu-nav-wrap">
-          <!-- <div class="menu">
-          <load src="./components/logo.html" />
-          <button type="button" class="close-menu-but" js-close-menu>
-            <svg class="close-icon" width="28" height="28">
-              <use href="/img/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div> -->
-          <nav class="menu-nav-tabl">
-            <ul class="menu-list">
-              <li class="menu-list-item">
-                <a href="#about" aria-label="About section" class="menu-list-link">About</a>
-              </li>
-              <li class="menu-list-item">
-                <a href="#yachts" aria-label="Yachts section" class="menu-list-link">Yachts</a>
-              </li>
-              <li class="menu-list-item">
-                <a href="#reviews" aria-label="Review section" class="menu-list-link">Reviews</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="menu-social">
-          <load src="./components/socials.html" />
-        </div>
-      </div>
+<header class="header">
+  <div class="container header-container">
+    <load src="./components/logo.html" />
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#about" aria-label="About section" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#yachts" aria-label="Yachts section" class="nav-link"
+            >Yachts</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" aria-label="Review section" class="nav-link"
+            >Reviews</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="media-container">
+      <load src="./components/socials.html" />
     </div>
-  </div>
-  <!-- Menu -->
-  <div class="header-menu">
-    <div class="container menu-wrap">
-      <div class="menu-nav-wrap">
-        <div class="menu">
-          <load src="./components/logo.html" />
-          <button type="button" class="close-menu-but">
-            <svg class="close-icon" width="28" height="28">
-              <use href="/img/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-        <nav class="menu-nav">
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a href="#about" aria-label="About section" class="menu-list-link">About</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="#yachts" aria-label="Yachts section" class="menu-list-link">Yachts</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="#reviews" aria-label="Review section" class="menu-list-link">Reviews</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="menu-social-container">
-        <load src="./components/socials.html" />
-      </div>
-    </div>
+    <button
+      type="button"
+      class="menu-open-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="burger-icon" width="28" height="28">
+        <use href="/img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
   </div>
 </header>
-      
 
-
+<!-- <div class="menu-nav-wrap">
+  <div class="menu">
+    <load src="./components/logo.html" />
+    <button type="button" class="close-menu-but js-close-menu">
+      <svg class="close-icon" width="28" height="28">
+        <use href="/img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <nav class="menu-nav">
+    <ul class="menu-list">
+      <li class="menu-list-item">
+        <a href="#about" aria-label="About section" class="menu-list-link"
+          >About</a
+        >
+      </li>
+      <li class="menu-list-item">
+        <a href="#yachts" aria-label="Yachts section" class="menu-list-link"
+          >Yachts</a
+        >
+      </li>
+      <li class="menu-list-item">
+        <a href="#reviews" aria-label="Review section" class="menu-list-link"
+          >Reviews</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <load src="./components/socials.html" />
+</div> -->
