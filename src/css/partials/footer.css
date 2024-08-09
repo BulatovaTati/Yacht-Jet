@@ -122,7 +122,7 @@
     }
 
     .nav-footer-list {
-        max-width: 288px;
+        max-width: 281px;
     }
     .nav-footer-navigation {
        
@@ -150,4 +150,17 @@
     .foot-pol {
         font-size: 14px;
     }
+}
+@media screen and (min-width:1280px) {
+    .footer {
+        padding: 0 25px;
+    }
+    .footer-container {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .footer-text {
+        max-width: 693px;
+    }
+    
 }
