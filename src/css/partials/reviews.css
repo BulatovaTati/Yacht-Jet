@@ -13,7 +13,7 @@
 
 .reviews-text {
   text-align: center;
-  color: rgba(251, 251, 251, 0.4);
+  color: var(--color-gray);
   margin-bottom: 40px;
 }
 
@@ -21,7 +21,7 @@
   max-width: 336px;
   min-height: 282px;
   border-radius: 24px;
-  background-color: #fbfbfb;
+  background-color: var(--primary-white);
   padding: 32px 16px;
   text-align: center;
   overflow-y: auto;
@@ -39,13 +39,13 @@
 }
 
 .swiper-pagination-bullet {
-  color: #fff;
+  color: var(--primary-white);
   width: 13px;
   height: 13px;
 }
 
 .swiper-pagination-bullet-active {
-  background: #faf9f7;
+  background: var(--primary-white);
   width: 28px;
   height: 13px;
   border-radius: 13px;
@@ -65,13 +65,13 @@
   margin-bottom: 8px;
   font-size: 18px;
   line-height: 1.1;
-  color: #040306;
+  color: var(--primary-black);
 }
 
 .reviews-item-text {
   font-size: 16px;
   line-height: 1.4;
-  color: rgba(4, 3, 6, 0.4);
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -101,11 +101,6 @@
     margin: 0 auto;
     margin-bottom: 75px;
   }
-
-  /* .reviews-list {
-    display: flex;
-   
-  } */
 }
 
 @media screen and (min-width: 1280px) {
