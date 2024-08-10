@@ -164,5 +164,9 @@
         max-width: 693px;
         
     }
-    
+}
+@media screen and (min-width:1440px) {
+    .footer-text {
+        max-width: 699px;
+    }
 }
