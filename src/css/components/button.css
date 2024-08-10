@@ -12,7 +12,7 @@
   font-size: 14px;
   line-height: 1.29;
   color: inherit;
-  background-color: #1b414b;
+  background-color: var(--primary-green);
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -23,8 +23,8 @@
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #1b414b;
-  background-color: #fbfbfb;
+  color: var(--primary-green);
+  background-color: var(--primary-white);
 }
 
 @media screen and (min-width: 768px) {
@@ -38,7 +38,7 @@
 }
 
 .yacht-btn-link {
-  border: 1px solid rgba(251, 251, 251, 0.35);
+  border: 1px solid var(--border-color);
   background-color: transparent;
   transition: color var(--time) var(--cubic),
     background-color var(--time) var(--cubic);
@@ -46,8 +46,8 @@
 
 .yacht-btn-link:hover,
 .yacht-btn-link:focus {
-  color: #1b414b;
-  background-color: #fbfbfb;
+  color: var(--primary-green);
+  background-color: var(--primary-white);
   border-color: transparent;
 }
 

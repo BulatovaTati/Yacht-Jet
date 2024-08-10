@@ -10,7 +10,7 @@
   background-color: var(--primary-white);
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   max-width: 335px;
   height: 42px;
@@ -51,6 +51,10 @@
   border-radius: 8px;
 }
 
+.nav-item:first-child {
+  background-color: var(--primary-green);
+}
+
 .nav-item:focus,
 .nav-item:active,
 .nav-item:hover {
@@ -85,6 +89,10 @@
   .nav,
   .media-container {
     display: block;
+  }
+
+  .nav {
+    margin-left: 113px;
   }
 
   .nav-list {
@@ -126,10 +134,6 @@
 
 .menu-container .nav {
   display: block;
-}
-
-.menu-container .nav-item:first-child {
-  background-color: var(--primary-green);
 }
 
 .menu-wrapper {

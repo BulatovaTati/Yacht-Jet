@@ -22,7 +22,7 @@
 
 .scroll-to-top:hover .scroll-to-top-icon,
 .scroll-to-top:focus .scroll-to-top-icon {
-  fill: white;
+  fill: var(--primary-white);
   background-color: transparent;
 }
 

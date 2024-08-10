@@ -31,6 +31,7 @@ ol {
   color: var(--color-white-gray);
   border-top: 2px solid rgba(251, 251, 251, 0.1);
 }
+
 .advantages-item:nth-child(-n + 9):before {
   content: '0' counter(item);
   counter-increment: item;
@@ -103,6 +104,7 @@ ol {
     max-width: 768px;
     gap: 44px 32px;
   }
+
   .advantages-item {
     width: calc((100% - 32px) / 2);
   }

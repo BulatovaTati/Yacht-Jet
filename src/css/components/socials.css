@@ -4,23 +4,23 @@
 }
 
 .social-media-icon {
-  fill: #1b414b;
+  fill: var(--primary-green);
   transition: fill var(--time) var(--cubic);
 }
 
 .social-media-icon:hover,
 .social-media-icon:focus {
-  fill: #062730;
+  fill: var(--header-menu-link-hover);
 }
 
 .menu-container .social-media-icon,
 .footer-container .social-media-icon {
-  fill: #fbfbfb;
+  fill: var(--primary-white);
 }
 
 .menu-container .social-media-icon:hover,
 .footer-container .social-media-icon:hover,
 .menu-container .social-media-icon:focus,
 .footer-container .social-media-icon:focus {
-  fill: rgba(251, 251, 251, 0.8);
+  fill: var(--backdrop-hover-social-link);
 }

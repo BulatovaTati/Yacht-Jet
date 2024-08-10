@@ -21,7 +21,7 @@
 .hero-title {
   font: 500 32px / 1 'Inter', sans-serif;
   text-align: center;
-  color: #fbfbfb;
+  color: var(--primary-white);
   max-width: 335px;
   margin: 0 auto 24px;
 }
@@ -29,7 +29,7 @@
 .hero-text {
   font: 300 12px / 1.16667 'Inter', sans-serif;
   text-align: center;
-  color: rgba(251, 251, 251, 0.7);
+  color: var(--color-text-hero);
   max-width: 335px;
   margin: 0 auto 38px;
 }
@@ -90,6 +90,7 @@
         url(/img/hero/hero-background-1280-2x.jpg);
     }
   }
+
   .hero-title {
     font-size: 80px;
     max-width: 1001px;
