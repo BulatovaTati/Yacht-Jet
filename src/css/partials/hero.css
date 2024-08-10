@@ -1,6 +1,6 @@
 .hero-container {
   padding: 260px 20px 302px;
-  background-image: linear-gradient(rgba, rgba(17, 19, 31, 0)),
+  background-image: linear-gradient(rgba(17, 19, 31, 0.39), rgba(17, 19, 31, 0)),
     url(/img/hero/hero-background-mob.jpg);
 
   background-repeat: no-repeat;
