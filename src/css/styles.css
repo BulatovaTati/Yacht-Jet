@@ -1,5 +1,7 @@
 /* #region Utils styles */
 @import url('./utils/variables.css');
+@import url('./utils/top-top.css');
+@import url('./utils/animations.css');
 /* #endregion */
 
 /* #region Common styles */
@@ -18,6 +20,8 @@
 @import url('./components/logo.css');
 @import url('./components/button.css');
 @import url('./components/socials.css');
+@import url('./components/nav.css');
+@import url('./components/menu.css');
 
 /* #endregion */
 

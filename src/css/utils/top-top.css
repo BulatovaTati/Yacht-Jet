@@ -1,0 +1,39 @@
+.scroll-to-top {
+  display: block;
+  position: fixed;
+  bottom: 210px;
+  right: 8%;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity var(--time) var(--cubic);
+  animation: slide-top 1s linear 2s infinite alternate both;
+}
+
+.scroll-to-top-icon {
+  transition: fill var(--time) var(--cubic),
+    background-color var(--time) var(--cubic);
+  fill: var(--primary-background);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.scroll-to-top:hover .scroll-to-top-icon,
+.scroll-to-top:focus .scroll-to-top-icon {
+  fill: var(--primary-white);
+  background-color: transparent;
+}
+
+.js-transparent {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top-icon {
+    width: 35px;
+    height: 35px;
+  }
+}

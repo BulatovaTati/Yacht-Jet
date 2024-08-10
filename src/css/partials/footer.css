@@ -1,119 +1,168 @@
 .footer {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .footer-container {
-    border-radius: 24px 24px 0 0;
-    background-color: #1b414b;
-    padding: 40px 30px 20px ;
-    
+  border-radius: 24px 24px 0 0;
+  background-color: var(--primary-green);
+  padding: 40px 30px 20px;
 }
 
 .logo-nav {
-    display: flex;
-    gap:37px;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-    row-gap: none;
-    justify-content: center;
-
+  display: flex;
+  gap: 37px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  justify-content: center;
 }
-
-/* .logo-footer {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: -0.03em;
-    color: #fbfbfb;
-    margin-right: 37px;
-    text-decoration: none;
-} */
-.footer-nav {
-    
-}
-
 
 .nav-footer-list {
-    display: flex;
-   
-    max-width: 206px;
-    max-height: 40px;
-    gap: 4px;
+  display: flex;
+  max-width: 206px;
+  gap: 4px;
 }
 
 .nav-footer-navigation {
-    border-radius: 8px;
-    width: 66px;
-    height: 40px;
-    background-color: rgba(251, 251, 251, 0.3);
-    text-align: center;
-    align-content: center;
+  border-radius: 8px;
+  background-color: rgba(251, 251, 251, 0.3);
+  text-align: center;
+  transition: color var(--time) var(--cubic);
 }
+
 .nav-link {
-    font-weight: 400;
-    font-size: 9px;
-    line-height: 1.3;
-    color: #fbfbfb;
-    text-decoration: none;
+  display: block;
+  padding: 15px 12px;
+  height: 40px;
+  font-size: 9px;
+  line-height: 1.3;
+  color: currentColor;
+  text-transform: uppercase;
 }
 
-.foot-social {
-    display: block;
-    padding: 0;
-
+.nav-footer-list .nav-footer-navigation:hover,
+.nav-footer-list .nav-footer-navigation:focus {
+  color: var(--primary-green);
+  background-color: var(--primary-white);
 }
 
 .socia-list-footer {
-    display: flex;
-    gap: 8px;
-    
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
-.socia-footer {}
-
 .footer-text {
-   
-    font-size: 18px;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 82px;
-    max-width: 279px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 82px;
+  max-width: 279px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-privacy {
-    display: flex;
- 
-    gap: 20px;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .title-footer-privacy {
-   
-    font-size: 12px;
-   
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: rgba(251, 251, 251, 0.4);
-    
-
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-gray);
 }
 
 .foot-pol {
-    
-    letter-spacing: 0.03em;
-    text-align: center;
-    text-decoration: none;
-    color: rgba(251, 251, 251, 0.4);
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-gray);
 }
-@media screen and (min-width:375px) {
-    .logo-nav {
 
-        gap: 37px;
-        row-gap: 80px;
-        /* margin-bottom: 0; */
-    }
+@media screen and (min-width: 375px) {
+  .logo-nav {
+    gap: 37px;
+    row-gap: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 0 16px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 48px 20px;
+  }
+
+  .logo-nav {
+    margin-bottom: 96px;
+  }
+
+  .logo-nav {
+    gap: 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .nav-footer-list {
+    max-width: 281px;
+  }
+
+  .nav-link {
+    padding: 15px 24px;
+  }
+
+  .foot-social {
+    margin-left: auto;
+  }
+
+  .footer-text {
+    font-size: 32px;
+    margin-bottom: 99px;
+    max-width: 640px;
+  }
+
+  .footer-privacy {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .title-footer-privacy {
+    font-size: 14px;
+    line-height: 1.18;
+  }
+
+  .foot-pol {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 0 25px;
+  }
+
+  .footer-container {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .footer-text {
+    max-width: 693px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-text {
+    max-width: 699px;
+  }
 }
