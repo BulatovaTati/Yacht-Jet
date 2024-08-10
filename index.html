@@ -21,10 +21,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     
     <title>YachtJet</title>
     <script type="module" crossorigin src="/Yacht-Jet/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Yacht-Jet/assets/index-18e52abf.css">
+    <link rel="stylesheet" href="/Yacht-Jet/assets/index-3afbc3b8.css">
   </head>
   <body>
     <header class="header">
@@ -110,40 +114,39 @@
       </svg>
     </button>
   </div>
-</header>
-
-<!-- <div class="menu-nav-wrap">
-  <div class="menu">
-    <a class="logo {=$class-modifier}" href="/index.html" aria-label="Home"
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="container menu-wrapper">
+      <div class="menu-top-container">
+        <a class="logo {=$class-modifier}" href="/index.html" aria-label="Home"
   >yachtjet</a
 >
 
-    <button type="button" class="close-menu-but js-close-menu">
-      <svg class="close-icon" width="28" height="28">
-        <use href="/img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-  </div>
-  <nav class="menu-nav">
-    <ul class="menu-list">
-      <li class="menu-list-item">
-        <a href="#about" aria-label="About section" class="menu-list-link"
-          >About</a
-        >
-      </li>
-      <li class="menu-list-item">
-        <a href="#yachts" aria-label="Yachts section" class="menu-list-link"
-          >Yachts</a
-        >
-      </li>
-      <li class="menu-list-item">
-        <a href="#reviews" aria-label="Review section" class="menu-list-link"
-          >Reviews</a
-        >
-      </li>
-    </ul>
-  </nav>
-  <ul class="social-media">
+        <button type="button" class="close-menu-btn js-close-menu">
+          <svg class="close-icon" width="28" height="28">
+            <use href="/Yacht-Jet/assets/icons-0346a71e.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about" aria-label="About section" class="nav-item-link"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#yachts" aria-label="Yachts section" class="nav-item-link"
+              >Yachts</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" aria-label="Review section" class="nav-item-link"
+              >Reviews</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-media">
   <li class="social-media-item">
     <a
       href="https://www.instagram.com/goitclub/"
@@ -154,7 +157,7 @@
       aria-label="Instagram"
     >
       <svg class="social-media-icon" width="24" height="24">
-        <use href="/img/icons.svg#icon-instagram"></use>
+        <use href="/Yacht-Jet/assets/icons-0346a71e.svg#icon-instagram"></use>
       </svg>
     </a>
   </li>
@@ -168,7 +171,7 @@
       aria-label="YouTube"
     >
       <svg class="social-media-icon" width="24" height="24">
-        <use href="/img/icons.svg#icon-youtube"></use>
+        <use href="/Yacht-Jet/assets/icons-0346a71e.svg#icon-youtube"></use>
       </svg>
     </a>
   </li>
@@ -182,13 +185,15 @@
       aria-label="Facebook"
     >
       <svg class="social-media-icon" width="24" height="24">
-        <use href="/img/icons.svg#icon-facebook"></use>
+        <use href="/Yacht-Jet/assets/icons-0346a71e.svg#icon-facebook"></use>
       </svg>
     </a>
   </li>
 </ul>
 
-</div> -->
+    </div>
+  </div>
+</header>
 
 
     <main>
@@ -732,6 +737,13 @@
       </svg>
     </button>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
   </body>
 </html>
