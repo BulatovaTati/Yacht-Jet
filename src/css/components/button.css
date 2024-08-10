@@ -1,6 +1,7 @@
-.btn-link {
+ .btn-link {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   margin: 0 auto;
   width: 141px;
@@ -12,19 +13,104 @@
   font-size: 14px;
   line-height: 1.29;
   color: inherit;
-  background-color: var(--primary-green);
+  background-color: #1b414b;
   border: none;
-  border-radius: 15px;
   cursor: pointer;
   text-wrap: nowrap;
-  transition: color var(--time) var(--cubic),
-    background-color var(--time) var(--cubic);
+
+  overflow: hidden;
+  position: relative;
+  transition: all 0.8s ease 0s;
+
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.wave-btn:hover {
+  transition: all 0.8s ease 0.2s;
+}
+
+.wave-btn:hover .wave-btn__waves {
+  top: -50px;
+}
+
+.wave-btn__text {
+  z-index: 1;
+}
+
+.wave-btn__waves {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.wave-btn__waves:after,
+.wave-btn__waves:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+
+.wave-btn__waves:before {
+  background-color: var(--primary-green);
+  border-radius: 48%;
+  animation: waves 5s infinite linear;
+}
+
+.wave-btn__waves:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 44%;
+  animation: waves 10s infinite linear;
+}
+
+@keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+@-webkit-keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+@-moz-keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
+}
+@-o-keyframes waves {
+  0% {
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+  }
 }
 
 .btn-link:hover,
 .btn-link:focus {
   color: var(--primary-green);
   background-color: var(--primary-white);
+  transition: all 0.8s ease 0.2s;
+}
+
+.btn-link:hover .wave-btn__waves {
+  top: -50px;
 }
 
 @media screen and (min-width: 768px) {
@@ -42,6 +128,9 @@
   background-color: transparent;
   transition: color var(--time) var(--cubic),
     background-color var(--time) var(--cubic);
+}
+.yacht-btn-link .wave-btn__waves {
+  top: -50px;
 }
 
 .yacht-btn-link:hover,
