@@ -1,4 +1,4 @@
- .btn-link {
+.btn-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   font-size: 14px;
   line-height: 1.29;
   color: inherit;
-  background-color: #1b414b;
+  background-color: var(--primary-green);
   border: none;
   cursor: pointer;
   text-wrap: nowrap;
@@ -67,39 +67,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 44%;
   animation: waves 10s infinite linear;
-}
-
-@keyframes waves {
-  0% {
-    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
-  }
-  100% {
-    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
-  }
-}
-@-webkit-keyframes waves {
-  0% {
-    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
-  }
-  100% {
-    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
-  }
-}
-@-moz-keyframes waves {
-  0% {
-    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
-  }
-  100% {
-    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
-  }
-}
-@-o-keyframes waves {
-  0% {
-    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
-  }
-  100% {
-    transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
-  }
 }
 
 .btn-link:hover,

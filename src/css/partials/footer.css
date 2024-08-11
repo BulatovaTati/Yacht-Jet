@@ -26,7 +26,8 @@
   border-radius: 8px;
   background-color: rgba(251, 251, 251, 0.3);
   text-align: center;
-  transition: color var(--time) var(--cubic);
+  transition: color var(--time) var(--cubic),
+    background-color var(--time) var(--cubic);
 }
 
 .nav-link {
