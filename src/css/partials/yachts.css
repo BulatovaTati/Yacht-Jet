@@ -161,6 +161,16 @@
   .table-yachts-first-column-name {
     padding-right: 33px;
   }
+
+  .card {
+      transition: all 0.5s;
+  }
+
+  .card:hover {
+      transition: all 0.9s;
+      transform: translateY(-10px);
+      
+  }
 }
 
 @media screen and (min-width: 1440px) {
