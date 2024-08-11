@@ -2,7 +2,7 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.03em;
-  color: #1b414b;
+  color: var(--primary-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -12,5 +12,32 @@
 }
 
 .footer-logo {
-  color: #fbfbfb;
+  color: var(--primary-white);
+}
+
+.header-container .logo {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container .logo {
+    left: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-container .logo {
+    left: 30px;
+  }
+}
+
+.header-container .logo:nth-child(1) {
+  color: transparent;
+  -webkit-text-fill-color: rgb(37, 119, 142);
+}
+
+.header-container .logo:nth-child(2) {
+  color: #0b1b20;
+  animation: animate 4s ease-in-out infinite;
 }
