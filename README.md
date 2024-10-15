@@ -1,8 +1,7 @@
-ex. buttom component <load
-      src="./components/button.html"
-      text="YOUR BTN TEXT"
-      class-modifier="footer-btn/yacht-btn/rent-btn"
-    />
+🌊🚤 YachtJet 😁🌴
+Technologies Used: HTML, CSS, JS, Vite
 
-ex. logo component <load src="./components/logo.html"
-class-modifier="footer-logo/>
+Project Type: Team Collaboration
+
+As the Team Lead, I was at the helm of the technical development, guiding the team through the complexities of the project. 
+The role required a deep understanding of cutting-edge technologies and the ability to seamlessly integrate them into a cohesive and innovative solution.
